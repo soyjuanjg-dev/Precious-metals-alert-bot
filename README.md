@@ -6,7 +6,6 @@
 ![Email](https://img.shields.io/badge/Email-Gmail-red?style=for-the-badge&logo=gmail)
 
 > Automated monitoring system for Gold, Silver and Platinum prices with daily reports, historical tracking, chart generation and real-time email alerts.
-
 ---
 
 ## 🚀 Overview
@@ -18,13 +17,13 @@ The system runs automatically every day at 09:00 using Windows Task Scheduler.
 
 ## 🔎 Features
 
-- 📈 Fetches live market data from Yahoo Finance (no paid API required)
-- 🗄 Stores historical data in SQLite
-- 🔁 Prevents duplicate daily entries using UPSERT logic
-- 📊 Generates historical price charts automatically
-- 📬 Sends professional HTML daily reports via email
-- 🚨 Sends real-time alert emails if price variation exceeds a defined threshold
-- ⏰ Fully automated daily execution
+📈 Fetches live market data from Yahoo Finance (no paid API required)
+🗄 Stores historical data in SQLite
+🔁 Prevents duplicate daily entries using UPSERT logic
+📊 Generates historical price charts automatically
+📬 Sends professional HTML daily reports via email
+🚨 Sends real-time alert emails if price variation exceeds a defined threshold
+⏰ Fully automated daily execution
 
 ---
 
@@ -50,18 +49,17 @@ User Inbox
 ---
 
 ## 🛠 Tech Stack
-- Python 3.11
-- yfinance
-- SQLite
-- matplotlib
-- smtplib
-- python-dotenv
-- Windows Task Scheduler
+Python 3.11
+yfinance
+SQLite
+matplotlib
+smtplib
+python-dotenv
+Windows Task Scheduler
 
 ---
 
 ## 📂 Project Structure
-
 
 precious-metals-alert-bot/
 │
@@ -80,6 +78,8 @@ precious-metals-alert-bot/
 ├── .gitignore
 └── README.md
 
+
+
 ---
 
 ## ⚙️ Installation
@@ -89,7 +89,6 @@ precious-metals-alert-bot/
 ```bash
 git clone https://github.com/YOUR_USERNAME/precious-metals-alert-bot.git
 cd precious-metals-alert-bot
-
 ```
 ```Create virtual environment:
 python -m venv venv
@@ -109,23 +108,23 @@ This project uses Windows Task Scheduler to execute daily at 09:00.
 If the system is powered off at that time, it runs automatically at the next startup.
 
 📧Daily email includes:
-- Metal
-- Ticker
-- Today's price
-- Yesterday's price
-- Percentage change
-- Alert section
-- Attached price charts
+Metal
+Ticker
+Today's price
+Yesterday's price
+Percentage change
+Alert section
+Attached price charts
 
 💡 What This Project Demonstrates
-- Real-world automation
-- Financial data extraction
-- SQL UPSERT logic
-- Data visualization
-- Email automation
-- Scheduled execution
-- Secure credential handling
-- End-to-end system design
+Real-world automation
+Financial data extraction
+SQL UPSERT logic
+Data visualization
+Email automation
+Scheduled execution
+Secure credential handling
+End-to-end system design
 
 👨‍💻 Author
 Juan Bautista
