@@ -25,6 +25,8 @@ The system runs automatically every day at 09:00 using Windows Task Scheduler.
 
 ---
 ## 🏗 System Architecture
+
+
 Yahoo Finance (yfinance)
 ↓
 Python Data Processing
@@ -38,6 +40,7 @@ Chart Generation (matplotlib)
 Email Reporting System (SMTP)
 ↓
 User Inbox
+
 ---
 
 ## 🛠 Tech Stack
