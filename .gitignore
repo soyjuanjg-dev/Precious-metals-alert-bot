@@ -10,7 +10,13 @@ __pycache__/
 *.pyc
 
 # local db
-data/*.sqlite
+data/
+*.sqlite
+*.db
 
 # generated charts
-docs/charts/*.png
+docs/charts/
+
+# OS files
+.DS_Store
+Thumbs.db
