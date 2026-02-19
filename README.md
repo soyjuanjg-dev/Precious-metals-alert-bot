@@ -15,6 +15,37 @@ The system runs automatically every day at 09:00 using Windows Task Scheduler.
 
 ---
 
+## 🎯 Why This Project Matters
+
+Financial markets generate large amounts of data daily.  
+This project demonstrates how to:
+
+- Automate real-world data pipelines
+- Persist historical financial data reliably
+- Detect price anomalies through comparison logic
+- Generate visual insights automatically
+- Deliver structured reporting via email
+- Deploy scheduled automation in a production-like environment
+
+It simulates a real monitoring system that could be extended to:
+- Stock portfolios
+- Cryptocurrency tracking
+- Commodity monitoring
+- Automated business reporting systems
+---
+
+## 📸 Demo
+
+### 📧 Daily Email Report
+
+![Email Report](docs/screenshots/email-demo.png)
+
+### 📊 Generated Chart Example
+
+![Chart Example](docs/screenshots/gold-chart.png)
+
+
+
 ## 🔎 Features
 
 📈 Fetches live market data from Yahoo Finance (no paid API required)
@@ -125,7 +156,10 @@ Scheduled execution
 Secure credential handling
 End-to-end system design
 
-👨‍💻 Author
-Juan Bautista
-Software Development Student
-Cybersecurity Background
+---
+
+## 👨‍💻 Author
+
+Juan Bautista  
+Software Development & Cybersecurity Background  
+GitHub: https://github.com/YOUR_USERNAME
