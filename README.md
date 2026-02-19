@@ -47,13 +47,14 @@ User Inbox
 ---
 
 ## 🛠 Tech Stack
-Python 3.11
-yfinance
-SQLite
-matplotlib
-smtplib
-python-dotenv
-Windows Task Scheduler
+
+- Python 3.11
+- yfinance
+- SQLite
+- matplotlib
+- smtplib
+- python-dotenv
+- Windows Task Scheduler
 
 ---
 
