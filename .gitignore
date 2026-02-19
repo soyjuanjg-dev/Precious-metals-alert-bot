@@ -1,0 +1,16 @@
+# Secrets
+.env
+
+# Virtual environment
+venv/
+.venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Database
+data/*.sqlite
+
+# Generated charts
+docs/charts/*.png
