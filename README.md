@@ -59,6 +59,7 @@ Windows Task Scheduler
 
 ## 📂 Project Structure
 
+```
 precious-metals-alert-bot/
 │
 ├── src/
@@ -75,8 +76,7 @@ precious-metals-alert-bot/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
-
-
+```
 
 ---
 
