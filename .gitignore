@@ -1,16 +1,16 @@
-# Secrets
+# secrets
 .env
 
-# Virtual environment
+# venv
 venv/
 .venv/
 
-# Python cache
+# python cache
 __pycache__/
 *.pyc
 
-# Database
+# local db
 data/*.sqlite
 
-# Generated charts
+# generated charts
 docs/charts/*.png
