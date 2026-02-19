@@ -165,6 +165,18 @@ End-to-end system design
 
 ---
 
+## 🚀 Future Improvements
+
+- 🌐 Web dashboard using GitHub Pages
+- 📊 Interactive long-term charts (15+ years historical data)
+- 👤 User registration system
+- 📬 Customizable alert subscriptions
+- ☁️ Cloud deployment (AWS / Render / Railway)
+- 🔐 Authentication & user management
+- 📡 REST API version
+
+---
+
 ## 👨‍💻 Author
 
 Juan Bautista  
