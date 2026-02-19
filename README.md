@@ -8,9 +8,12 @@
 > Automated monitoring system for Gold, Silver and Platinum prices with daily reports, historical tracking, chart generation and real-time email alerts.
 
 ---
+
 ## 🚀 Overview
+
 This project is an end-to-end automated financial monitoring system that tracks daily closing prices of precious metals (Gold, Silver, Platinum), stores historical data locally, generates price charts, and sends automated email reports and alerts.
 The system runs automatically every day at 09:00 using Windows Task Scheduler.
+
 ---
 
 ## 🔎 Features
@@ -25,7 +28,9 @@ The system runs automatically every day at 09:00 using Windows Task Scheduler.
 
 ---
 
+
 ## 🏗 System Architecture
+
 
 Yahoo Finance (yfinance)
         ↓
