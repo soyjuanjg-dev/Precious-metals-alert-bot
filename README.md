@@ -24,22 +24,23 @@ The system runs automatically every day at 09:00 using Windows Task Scheduler.
 - ⏰ Fully automated daily execution
 
 ---
+
 ## 🏗 System Architecture
 
-
 Yahoo Finance (yfinance)
-↓
+        ↓
 Python Data Processing
-↓
+        ↓
 SQLite Database (Historical Storage)
-↓
+        ↓
 Price Comparison Logic
-↓
+        ↓
 Chart Generation (matplotlib)
-↓
+        ↓
 Email Reporting System (SMTP)
-↓
+        ↓
 User Inbox
+
 
 ---
 
@@ -60,13 +61,13 @@ User Inbox
 precious-metals-alert-bot/
 │
 ├── src/
-│ ├── main.py
-│ ├── db.py
-│ ├── provider.py
-│ ├── charts.py
-│ ├── alerts.py
-│ ├── emailer.py
-│ └── config.py
+│   ├── main.py
+│   ├── db.py
+│   ├── provider.py
+│   ├── charts.py
+│   ├── alerts.py
+│   ├── emailer.py
+│   └── config.py
 │
 ├── data/
 ├── docs/charts/
