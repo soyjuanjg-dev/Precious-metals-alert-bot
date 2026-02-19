@@ -55,6 +55,8 @@ User Inbox
 ---
 
 ## 📂 Project Structure
+
+
 precious-metals-alert-bot/
 │
 ├── src/
@@ -75,11 +77,13 @@ precious-metals-alert-bot/
 ---
 
 ## ⚙️ Installation
-Clone the repository:
+
+### Clone repository
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/precious-metals-alert-bot.git
 cd precious-metals-alert-bot
+
 ```
 ```Create virtual environment:
 python -m venv venv
