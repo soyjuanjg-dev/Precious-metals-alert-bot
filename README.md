@@ -133,6 +133,13 @@ GMAIL_USER=your_email@gmail.com
 GMAIL_APP_PASSWORD=your_google_app_password
 ALERT_THRESHOLD=6
 
+## ▶️ Run manually
+
+```bash
+python -m src.main
+
+```
+
 ⏰ Automation
 This project uses Windows Task Scheduler to execute daily at 09:00.
 If the system is powered off at that time, it runs automatically at the next startup.
