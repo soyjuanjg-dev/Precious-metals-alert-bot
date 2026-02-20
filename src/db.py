@@ -1,30 +1,24 @@
-import os
 import sqlite3
 from datetime import date
+from pathlib import Path
 from .config import DB_PATH
 
-
 def init_db():
-    os.makedirs("data", exist_ok=True)
+    # Ensure /data exists
+    Path(DB_PATH).parent.mkdir(parents=True, exist_ok=True)
 
     conn = sqlite3.connect(DB_PATH)
     cur = conn.cursor()
 
-    cur.execute(
-        """
-        CREATE TABLE IF NOT EXISTS prices (
-            id INTEGER PRIMARY KEY AUTOINCREMENT,
-            metal TEXT NOT NULL,
-            price REAL NOT NULL,
-            day TEXT NOT NULL
-        )
-        """
+    cur.execute("""
+    CREATE TABLE IF NOT EXISTS prices (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        metal TEXT NOT NULL,
+        price REAL NOT NULL,
+        day TEXT NOT NULL,
+        UNIQUE(metal, day)
     )
-
-    # Esto asegura "1 registro por metal y día" incluso si la DB se creó antes sin UNIQUE
-    cur.execute(
-        "CREATE UNIQUE INDEX IF NOT EXISTS idx_prices_metal_day ON prices(metal, day)"
-    )
+    """)
 
     conn.commit()
     conn.close()
@@ -32,8 +26,8 @@ def init_db():
 
 def save_price(metal: str, price: float, day: str | None = None):
     """
-    Guarda el precio del metal para un día.
-    Si ya existe (metal, day), actualiza el precio (evita duplicados).
+    Save price for a given day.
+    If (metal, day) already exists, update it (prevents duplicates).
     """
     if day is None:
         day = date.today().isoformat()
@@ -57,7 +51,7 @@ def save_price(metal: str, price: float, day: str | None = None):
 
 def get_yesterday_price(metal: str) -> float | None:
     """
-    Devuelve el precio más reciente anterior al de hoy, si existe.
+    Return most recent price before today (if available).
     """
     today = date.today().isoformat()
 
@@ -82,7 +76,7 @@ def get_yesterday_price(metal: str) -> float | None:
 
 def get_prices(metal: str):
     """
-    Devuelve lista (day, price) ordenada asc.
+    Return list of (day, price) ascending by day.
     """
     conn = sqlite3.connect(DB_PATH)
     cur = conn.cursor()

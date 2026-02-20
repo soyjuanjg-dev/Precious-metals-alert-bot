@@ -1,22 +1,24 @@
-# secrets
-.env
-
-# venv
-venv/
-.venv/
-
-# python cache
+# Python
 __pycache__/
 *.pyc
+*.pyo
+*.pyd
 
-# local db
-data/
-*.sqlite
-*.db
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
 
-# generated charts
-docs/charts/
+# Local secrets
+.env
 
-# OS files
+# Local data/artifacts
+data/*.sqlite
+data/*.db
+docs/charts/*.png
+run_log.txt
+
+# OS
 .DS_Store
 Thumbs.db
