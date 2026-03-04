@@ -38,11 +38,11 @@ It simulates a real monitoring system that could be extended to:
 
 ### 📧 Daily Email Report
 
-![Email Report](docs/screenshots/email-demo.png)
+![Email Report](docs/screenshots/email2.png)
 
 ### 📊 Generated Chart Example
 
-![Chart Example](docs/screenshots/gold-chart.png)
+![Chart Example](docs/screenshots/gold2.png)
 
 
 
